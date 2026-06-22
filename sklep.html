@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sklep MPK</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .description {
+      text-align: center;
+      color: #4b5563;
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .item-details {
+      margin-top: 6px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-weight: bold;
+      white-space: nowrap;
+      color: #111827;
+    }
+
+    .special {
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px solid #16a34a;
+      border-radius: 10px;
+      background: #f0fdf4;
+    }
+
+    .special .price {
+      color: #15803d;
+    }
+
+    .note {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>SKLEP MPK</h1>
+
+    <p class="description">
+      Punkty zdobyte za wykonywanie służb można wymieniać na dostępne nagrody.
+    </p>
+
+    <h2>CENNIK</h2>
+
+    <section class="item">
+      <div>
+        <div class="item-title">Pakiet ZKM Gdynia</div>
+        <div class="item-details">
+          W skład pakietu wchodzą:<br>
+          Solaris Urbino 8.9 III GRYF<br>
+          Solaris Urbino 18 I PKA Gdynia
+        </div>
+      </div>
+      <div class="price">300 pkt</div>
+    </section>
+
+    <section class="item">
+      <div>
+        <div class="item-title">Solaris Urbino 15 II GZM „Deska”</div>
+      </div>
+      <div class="price">500 pkt</div>
+    </section>
+
+    <section class="item">
+      <div>
+        <div class="item-title">Pakiet Zabytkowy</div>
+        <div class="item-details">
+          W skład pakietu wchodzą:<br>
+          Linie zabytkowe<br>
+          Autobusy zabytkowe
+        </div>
+      </div>
+      <div class="price">600 pkt</div>
+    </section>
+
+    <section class="item">
+      <div>
+        <div class="item-title">DrobTrans</div>
+      </div>
+      <div class="price">1000 pkt</div>
+    </section>
+
+    <section class="special">
+      <div class="item">
+        <div>
+          <div class="item-title">Solaris Urbino 18 III GAiT</div>
+          <div class="item-details">Oferta obowiązuje do końca czerwca.</div>
+        </div>
+        <div class="price">GRATIS</div>
+      </div>
+    </section>
+
+    <p class="note">
+      Punkty przyznawane są za wykonywanie służb. Liczba dostępnych nagród może ulec zmianie.
+    </p>
+  </main>
+</body>
+</html>
